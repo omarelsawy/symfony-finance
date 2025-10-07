@@ -8,7 +8,7 @@ doctrine_mongodb:
             autoEncryption:
                 extraOptions:
                     cryptSharedLibRequired: true
-                    cryptSharedLibPath: '%env(MONGODB_CRYPT_SHARED_LIB_PATH)%'
+                    cryptSharedLibPath: '%kernel.project_dir%/bin/lib/mongo_crypt_v1.dll'
                 kmsProvider:
                     type: local
                     key: '%env(MONGODB_ENCRYPTION_KEY)%'
